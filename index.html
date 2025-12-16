@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Waltham Village Catering — Coming Soon</title>
+	<meta name="description" content="Waltham Village Catering is coming soon. Join our mailing list for updates." />
+	<style>
+		:root{
+			--bg:#0f1724;
+			--card:#0b1220;
+			--accent:#f59e0b;
+			--muted:#9aa4b2;
+			--glass: rgba(255,255,255,0.035);
+			font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+		}
+		html,body{height:100%;margin:0;background:linear-gradient(180deg,#071024 0%,var(--bg) 100%);color:#e6eef6}
+		.container{
+			min-height:100vh;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			padding:32px;
+			box-sizing:border-box;
+		}
+		.card{
+			max-width:920px;
+			width:100%;
+			background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+			border-radius:14px;
+			padding:40px;
+			box-shadow: 0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+			backdrop-filter: blur(6px);
+			display:grid;
+			grid-template-columns: 1fr; /* single column layout */
+			gap:28px;
+			align-items:center;
+		}
+		.brand{
+			display:flex;
+			flex-direction:column;
+			row-gap:12px;
+		}
+		.logo{
+			display:flex;
+			align-items:center;
+			column-gap:12px;
+		}
+		.logo-mark{
+			width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffb84d);
+			display:flex;align-items:center;justify-content:center;font-weight:700;color:#102230;
+			font-size:20px;
+			box-shadow: 0 6px 18px rgba(245,158,11,0.14);
+		}
+		h1{margin:0;font-size:28px;letter-spacing:-0.5px}
+		p.lead{margin:0;color:var(--muted);font-size:15px}
+		.small{font-size:13px;color:var(--muted)}
+		@media (max-width:880px){
+			.card{grid-template-columns:1fr; padding:28px}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<main class="card" role="main">
+			<section class="brand" aria-labelledby="coming-soon">
+				<div class="logo">
+					<div class="logo-mark" aria-hidden="true">W</div>
+					<div>
+						<div style="font-weight:700">Waltham Village Catering</div>
+						<div class="small">Fresh. Local. Memorable.</div>
+					</div>
+				</div>
+
+				<h1 id="coming-soon">We're cooking something delicious — coming soon</h1>
+				<p class="lead">Launching with seasonal menus, private events, and catering services. Stay tuned for updates.</p>
+
+				<!-- cleaned: removed countdown and signup UI -->
+			</section>
+
+			<!-- aside removed -->
+		</main>
+	</div>
+</body>
+</html>
